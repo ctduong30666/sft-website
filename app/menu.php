@@ -28,7 +28,29 @@
             <a href=""><i class="fa-solid fa-gear"></i></a>
         </div>
     </div>
+<<<<<<< Updated upstream
 </body>
+=======
+    <div class="item menu_item">
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <div class="item menu_item">
+        <a style="cursor: pointer;" onclick="myPopup2.show()" href=""><i class="fa-solid fa-calendar"></i></a>
+    </div>
+    <div class="line"></div>
+    <div class="item"></div>
+    <input type="checkbox" name="" id="mode-toggle_btn">
+    <label for="mode-toggle_btn">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <div class="ball"></div>
+    </label>
+    <div class="item menu_item">
+        <a href="./setting.php"><i class="fa-solid fa-gear"></i></a>
+    </div>
+</div>
+
+>>>>>>> Stashed changes
 <script>
     const myPopup = new Popup({
         id: "my-popup",

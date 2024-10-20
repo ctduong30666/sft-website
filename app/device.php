@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,45 @@
                                 <li class="active">Tự động</li>    
                                 <li>Thủ công</li>
                             </ul>
+=======
+<div id="device-box" class="device-box">
+    <div class="device-left">
+        <div class="device-left-bottom">
+            <div class="sketchfab-embed-wrapper"> <iframe id="sketchfab-iframe" style="border-radius: 10px 0px 0px 10px; margin-top:4px" width="280px" height="330px" autoplay="true"
+                    src="https://sketchfab.com/models/542274618520405e83ff5f1dfeaca3f5/embed"
+                    frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                    execution-while-out-of-viewport execution-while-not-rendered web-share></iframe></div>
+            <script>
+                window.addEventListener('resize', function() {
+                    const iframe = document.getElementById('sketchfab-iframe');
+                    const width = window.innerWidth;
+                    console.log(width);
+                    const height = window.innerHeight;
+                    if (width < 768) {
+                        iframe.style.width = '100%';
+                        iframe.style.height = '100%';
+                    } else {
+                        iframe.style.width = '280px';
+                        iframe.style.height = '330px';
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <div class="device-right">
+        <div class="device-right-top">
+            <span>CÁ NHÂN HOÁ THIẾT BỊ</span>
+        </div>
+        <div id="device-right-content" class="device-right_content">
+            <div class="water">
+                <div class="first-item">
+                    <span id="water-amount" class="water-amount">Lượng nước: </span>
+                    <div class="dropdown">
+                        <div class="select">
+                            <div class="selected" style="font-size:13px;">Tự động</div>
+                            <div class="caret"></div>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                     <div id="slider-box" class="second-item slider-disable">

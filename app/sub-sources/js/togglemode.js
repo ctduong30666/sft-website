@@ -19,17 +19,21 @@ var inner = document.querySelectorAll(".inner");
 var advice = document.querySelectorAll(".advice");
 var advice_input = document.querySelectorAll(".advice-input");
 var health_box_new = document.getElementById("health-box-new");
+var homeBox = document.getElementById("home-box");
+var logoutBtn = document.querySelector(".logout");
+
 togglebtn.addEventListener("change", function () {
   if (this.checked) {
     bgcolor.style.backgroundColor = "#0A1621";
     bgcolor.style.color = "#fff";
-    main_box.style.backgroundColor = "#0b1727";
+    main_box.style.backgroundColor = "#162231";
     main_box.style.boxShadow = "none";
-    health_box.style.backgroundColor = "#162231";
-    register_box.style.backgroundColor = "#162231";
-    sub_logo.style.color = "#fff";
-    device_box.style.backgroundColor = "#162231";
-    device_right_content.style.backgroundColor = "#162231";
+    health_box.style.backgroundColor = "#121e2d";
+    register_box.style.backgroundColor = "#121e2d";
+    sub_logo.style.color = "#fff"; // Dark mode
+    sub_logo.style.textShadow = "1px 1px 2px rgba(0, 0, 0, 0.5)"; // Thêm hiệu ứng bóng cho sub-logo
+    device_box.style.backgroundColor = "#121e2d";
+    device_right_content.style.backgroundColor = "#121e2d";
     login_btn.style.color = "#fff";
     register_btn.style.color = "#fff";
     water_amount.style.color = "#fff";
@@ -39,11 +43,11 @@ togglebtn.addEventListener("change", function () {
     input.forEach((input) => {
       input.style.color = "#fff";
       input.style.borderColor = "#fff";
-      input.style.backgroundColor = "#162231";
+      input.style.backgroundColor = "#121e2d";
       input.style.placeholder = "#fff";
     });
     menu.forEach((menu) => {
-      menu.style.backgroundColor = "#162231";
+      menu.style.backgroundColor = "#121e2d";
       menu.style.boxShadow = "rgba(0, 0, 0, 0.3) 0px 4px 12px";
     });
     progress_number.style.color = "#fff";
@@ -58,10 +62,11 @@ togglebtn.addEventListener("change", function () {
     advice_input.forEach((advice_input) => {
       advice_input.style.color = "#fff";
       advice_input.style.borderColor = "#fff";
-      advice_input.style.backgroundColor = "#162231";
+      advice_input.style.backgroundColor = "#121e2d";
       advice_input.style.placeholder = "#fff";
     });
-    health_box_new.style.backgroundColor = "#162231";
+    health_box_new.style.backgroundColor = "#121e2d";
+    homeBox.style.backgroundColor = "#121e2d";
   } else {
     bgcolor.style.backgroundColor = "#DBE8F4";
     bgcolor.style.color = "#000";
@@ -69,7 +74,8 @@ togglebtn.addEventListener("change", function () {
     main_box.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px";
     health_box.style.backgroundColor = "#fff";
     register_box.style.backgroundColor = "#fff";
-    sub_logo.style.color = "#000";
+    sub_logo.style.color = "#000"; // Light mode
+    sub_logo.style.textShadow = "none"; // Xóa hiệu ứng bóng cho sub-logo
     device_box.style.backgroundColor = "#fff";
     device_right_content.style.backgroundColor = "#fff";
     login_btn.style.color = "#000";
@@ -104,5 +110,8 @@ togglebtn.addEventListener("change", function () {
       advice_input.style.placeholder = "#000";
     });
     health_box_new.style.backgroundColor = "#fff";
+    // Light mode
+    if (homeBox) homeBox.classList.remove("dark-mode");
+    if (logoutBtn) logoutBtn.style.backgroundColor = "#59b65a";
   }
 });

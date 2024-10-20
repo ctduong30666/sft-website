@@ -12,6 +12,49 @@
   width: 85px;
 }
 
+<<<<<<< Updated upstream
+=======
+@media (max-width: 1630px) {
+  .menu {
+    width: max-content;
+  }
+  .line {
+    display: none;
+  }
+  label {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 200px;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    width: 100px;
+    left: 0 !important;
+    transform: none !important;
+  }
+  .menu-box {
+    margin: 2rem;
+    background-color: #59b65a;
+    border-radius: 100px;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: fit-content;
+    padding: 0 30px;
+    gap: 0.7rem;
+    display: flex;
+  }
+  .item {
+    margin: 0 !important;
+  }
+}
+
+>>>>>>> Stashed changes
 .menu_item {
   align-items: center;
   display: flex;
@@ -27,7 +70,6 @@
 
 .menu_item .menu_avatar i {
   font-size: 52px;
-  margin-bottom: 10px;
 }
 
 .item {
@@ -99,4 +141,10 @@ label {
   top: 3px;
   transition: transform 0.2s linear;
   width: 25px;
+}
+@media (max-width: 768px) {
+  .menu_item .menu_avatar i {
+    font-size: 52px;
+    margin-right: 10px;
+  }
 }
